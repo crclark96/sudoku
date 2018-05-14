@@ -45,5 +45,6 @@ Box** create_boxes();
 Sudoku* create_sudoku(Square ***puzzle, Box **boxes);
 int box_singles(Square ***squares,Box **boxes);
 int check_rows(Square ***squares,Box **boxes);
+int check_cols(Square ***squares,Box **boxes);
 
 #endif

@@ -107,11 +107,10 @@ int check_puzzle(Square ***sudoku,Box **boxes){
     }
   }
 
-  if(box_singles(sudoku,boxes)){
-    return 1;
-  }
-
-  return check_rows(sudoku,boxes);
+  // run functions until one returns 1 or all return 0
+  return box_singles(sudoku,boxes)
+  || check_rows(sudoku,boxes)
+  || check_cols(sudoku,boxes);
 
 }
 

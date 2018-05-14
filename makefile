@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -g -O2
-OBJS = sudoku.o puzzle.o square.o box.o row.o
+OBJS = sudoku.o puzzle.o square.o box.o row.o col.o
 
 all: sudoku run clean
 
